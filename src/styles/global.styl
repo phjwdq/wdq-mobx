@@ -1,0 +1,84 @@
+/**
+ * @file global.styl
+ * @author luwenlong
+ */
+
+@import './mixin.styl'
+
+$stone = #dfdfdf
+$-border-color = #e6e6e6
+
+:global
+    @import './reset.styl'
+    .cuser-fbtn
+        px2px(34)
+    .wap-cutitl
+        px2px(42)
+    .log-reg-field
+        height px2rem(122)
+        flexbox()
+        justify-content(space-between)
+        align-items(center)
+        border-bottom 1px solid #aeb9ca
+        position relative
+        color #b2bbca
+        input
+            px2px(30)
+            height 100%
+            width 100%
+            border none
+            background none
+            color #ff9500
+        em
+            min-width px2rem(50)
+            height 100%
+            inline-flex()
+            justify-content(center)
+            align-items(center)
+    .arrow-left
+        width px2rem(22)
+        height px2rem(40)
+        background url('../assets/arrow-left.png') no-repeat
+        background-size 100% 100%
+        position absolute
+        left px2rem(30)
+        top px2rem(24)
+    .icon-close
+        display inline-block
+        width px2rem(52)
+        height px2rem(52)
+        background url('../assets/icon-close.png') no-repeat
+        background-size 100% 100%
+    // alert
+    .ui-alert-content
+        width px2rem(610)
+        background #fff
+        color #5f6976
+        border-radius px2rem(14)
+        px2px(32)
+        margin 0 auto
+        p
+            line-height 1.5
+            padding px2rem(83) px2rem(32) px2rem(66)
+            text-align center
+    .brands-wrap
+        overflow auto
+    .subtl
+        px2px(28)
+    .h5
+        px2px(36)
+    .p
+        px2px(24)
+    .ui-alert-btn
+        color #ff9500
+        height px2rem(90)
+        line-height px2rem(90)
+        text-align center
+        border-top 1px solid #dedede
+        px2px(36)
+    .schema
+        h2
+            px2px(46)
+        .fbtn
+            px2px(38)
+
