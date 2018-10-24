@@ -10,7 +10,7 @@ const host = require('./getHost')
 
 const compiler = webpack({...config, mode: 'development'})
 
-const port = '8030'
+const port = '9045'
 
 const server = new WebpackDevServer(compiler, {
     open: false,
@@ -36,14 +36,12 @@ const server = new WebpackDevServer(compiler, {
         '/napi/cuser': {
             // target: 'https://www.dingdangbao.com',
             target: 'http://test.dingdangbao.com',
-            // target: 'http://localhost:18030',
             changeOrigin: true,
             secure: false
         },
         '/napi/sms': {
             // target: 'https://www.dingdangbao.com',
             target: 'http://test.dingdangbao.com',
-            // target: 'http://localhost:18030',
             changeOrigin: true,
             secure: false
         },
@@ -51,7 +49,6 @@ const server = new WebpackDevServer(compiler, {
             // target: 'https://www.dingdangbao.com',
             target: 'https://www.inno-life.cc/api',
             changeOrigin: true,
-            // target: 'http://localhost:18030',
             secure: false,
             pathRewrite: {
                 '/napi': ''
